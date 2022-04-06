@@ -122,6 +122,7 @@ Target application
 ku_mlfq n ts
 
 – n: number of processes
+
   • The first process prints ‘A’
   • The second process prints ‘B’
   • …
