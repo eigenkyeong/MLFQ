@@ -124,8 +124,11 @@ ku_mlfq n ts
 – n: number of processes
 
   • The first process prints ‘A’
+  
   • The second process prints ‘B’
+  
   • …
+  
   • i.e., 1<= n <= 26
   
 – ts: number of time slices to run
