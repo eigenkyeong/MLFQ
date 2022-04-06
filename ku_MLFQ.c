@@ -160,9 +160,9 @@ void moveAllQueue1()
 		p = dequeue(&queue3);
 		enqueue(&queue1, p, 0);
 	}
-
+	curr = (&queue1)->front;
 	for (int i = 0; i < n; i++) {
-		curr = (&queue1)->front;
+		
 		if (curr->timeAllot >= 2) {
 			if (IsEmpty(&queue2)) {
 				(&queue2)->front = curr;
@@ -174,6 +174,9 @@ void moveAllQueue1()
 			(&queue2)->count++;
 			(&queue1)->count--;
 			curr->timeAllot = 0;
+		}
+		else {
+			curr = curr->next;
 		}
 	}
 
