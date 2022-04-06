@@ -5,6 +5,7 @@ Multi-Level Feedback Queue (MLFQ)
 
 ## Multiple queues
 – Each has a different priority level
+
 – At any given time, a job that is ready to run is on a single queue
 
 
