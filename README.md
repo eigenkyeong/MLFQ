@@ -1,4 +1,4 @@
-# KU_MLFQ
+# MLFQ
 Multi-Level Feedback Queue (MLFQ)
 
 
@@ -119,8 +119,9 @@ Target application
 
 
 ## Execution Command
+```
 ku_mlfq n ts
-
+```
 – n: number of processes
 
   • The first process prints ‘A’
