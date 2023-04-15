@@ -25,7 +25,7 @@ Multi-Level Feedback Queue (MLFQ)
 
 
 ## Multi-Level Queues
-Priority
+**Priority**
 
 – 1 (high)
 
@@ -33,14 +33,14 @@ Priority
 
 – 3 (low)
 
-Ready queues
+**Ready queues**
 
 – Linked list
 
 
 
 ## Time Slice
-Interval timer (itimer)
+**Interval timer (itimer)**
 
 – int setitimer(int which, const struct itimerval *new_value, struct itimerval *old_value)
 
@@ -58,26 +58,26 @@ struct timeval {
 
 
 ## Scheduling Parameters
-Time slice
+**Time slice**
 
 – 1 second
 
-Gaming tolerance
+**Gaming tolerance**
 
 – Time allotment: 2 seconds
 
-S
+**S**
 
 – 10 seconds
 
-Number of CPU cores
+**Number of CPU cores**
 
 – 1
 
 
 
 ## Signaling
-System calls for signaling
+**System calls for signaling**
 
 – handler_t *signal(int signum, handler_t *handler)
 
@@ -85,7 +85,7 @@ System calls for signaling
 
 – int kill(pid_t pid, int sig);
 
-Signals
+**Signals**
 
 – SIGALRM
 
@@ -96,7 +96,7 @@ Signals
 
 
 ## Process Creation
-System calls for process management
+**System calls for process management**
 
 – int fork(void)
 
@@ -105,22 +105,22 @@ System calls for process management
 
 
 ## Application
-Target application
+**Target application**
 
 – The user program is given in a binary format
   - Stops itself
   - Performs an infinite loop
   - Prints a character passed through argv for every 200ms
 
-– E.g., > ku_app A
+– E.g., > my_app A
 
-– ku_app locates in the same directory with the scheduler
+– my_app locates in the same directory with the scheduler
 
 
 
 ## Execution Command
 ```
-ku_mlfq n ts
+my_mlfq n ts
 ```
 – n: number of processes
 
@@ -130,7 +130,7 @@ ku_mlfq n ts
   
   • …
   
-  • i.e., 1<= n <= 26
+  • i.e., 1 <= n <= 26
   
 – ts: number of time slices to run
 
