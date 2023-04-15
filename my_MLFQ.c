@@ -85,7 +85,7 @@ int main(int argc, char* argv[]) {
 		sleep(5);
 		pid = fork();
 		if (pid == 0) {
-			execl("./ku_app", "ku_app", str[i], NULL);
+			execl("./my_app", "my_app", str[i], NULL);
 		}
 		else {
 			enqueue(&queue1, pid, 0);
